@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natural Language</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+        <!-- Links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="navbar-brand" href="#">Simple Natural Language App</a>
+          </li>
+        </ul>
+      
+      </nav>
+
+    <div class="container jumbotron mt-5">
+        <h4>It extracts digit numbers from numbers written in words</h4>
+        <small><code>e.g fifty six returns : 56 </code></small>
+        <hr>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card card-body mb-2">
+                    <label>Enter Price in Words</label>
+                    <textarea id="price" class="form-control"></textarea><br>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="output card card-body">
+
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="bundle.js"></script>
+</body>
+</html>
