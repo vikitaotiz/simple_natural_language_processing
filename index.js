@@ -3,7 +3,7 @@ nlp.extend(require('compromise-numbers'));
 
 let price = document.querySelector('#price'); 
 let digit = document.querySelector('#digit'); 
-let btn = document.querySelector('button'); 
+let btn = document.querySelector('#btn'); 
 let output = document.querySelector('.output');
 
 let processInput = (e) => {
@@ -16,3 +16,9 @@ let processInput = (e) => {
 };
 
 price.addEventListener('keyup', processInput);
+
+btn.addEventListener('click', ()=>{
+    let doc = nlp(price.value);
+    let str = doc.values().toNumber().out();
+    output.innerHTML = `<h2>${str}</h2>`;
+});
